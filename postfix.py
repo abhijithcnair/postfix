@@ -7,4 +7,14 @@ def get_expression(input,operator,operand,i):
         operator= input
     else:
         operand = input
+def push(operand,stack):
+    stack.append(operand)
+    return stack
+
+def pop(stack):
+    return stack.pop
+
+def math_eval(operator,value1,value2,stack):
+    if operator=='+':
+        solution= value1 + value2
         
